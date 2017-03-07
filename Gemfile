@@ -8,16 +8,23 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
+gem 'bootstrap-sass'
+gem 'pg'   # вместо gem 'sqlite3'
+
+
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec', '>= 2.5.0' 
+  gem 'capybara','>= 2.2.0'
 end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'capybara'
+  
+  
+  gem 'libnotify', '0.8.0'
 end
 
 
@@ -52,7 +59,7 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '>=0.15.1'
+ # gem 'pg', '>=0.15.1'
   gem 'rails_12factor', '>=0.0.2'
 end
 
