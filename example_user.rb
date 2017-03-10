@@ -1,3 +1,5 @@
+=begin
+
 class User
   attr_accessor :name, :email
 
@@ -10,3 +12,4 @@ class User
     "#{@name} <#{@email}>"
   end
 end
+=end

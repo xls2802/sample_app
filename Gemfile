@@ -22,10 +22,10 @@ group :development, :test do
 end
 
 group :test do
-  gem 'selenium-webdriver'
-  
+  gem 'selenium-webdriver'  
   
   gem 'libnotify', '0.8.0'
+  gem 'factory_girl_rails'
 end
 
 
