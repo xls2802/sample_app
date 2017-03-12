@@ -195,6 +195,8 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 #error_explanation {
@@ -207,7 +209,7 @@ input {
 
 
 
-/*    НЕ ОПРЕДЕЛЕНА ПЕРЕМЕННАЯ @extend */
+/* Errors @extend */
 .field_with_errors {
   @extend .has-error;
  /*@extend .error;*/
